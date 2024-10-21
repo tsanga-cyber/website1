@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>My Restaurant</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <!-- <li><a href="#about">About Us</a></li> -->
+                <li><a href="#reservations">Reservations</a></li>
+                <!-- <li><a href="#contact">Contact</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <section id="slider">
+        <div class="slider">
+            <img class="slide" src="../img/download (1).jpeg" alt="Delicious Dish 1">
+            <img class="slide" src="../img/download (2).jpeg" alt="Delicious Dish 2">
+            <img class="slide" src="../img/download (3).jpeg" alt="Delicious Dish 3">
+            <img class="slide" src="../img/download (4).jpeg" alt="Delicious Dish 4">
+            <img class="slide" src="../img/5.-Cameroon-Beef-Jollof-Rice.webp" alt="Delicious Dish 5">
+        </div>
+        
+        <div class="controls">
+            <button id="prev">❮ previous</button>
+            <button id="next">❯ next</button>
+        </div>
+    </section>
+
+    <!-- Login and Register Pop-up -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <div id="form-container">
+            <div id="login-form">
+                <h2>Login</h2>
+                <form>
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" required>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="#" onclick="toggleForms()">Register</a></p>
+            </div>
+            <div id="register-form" style="display: none;">
+                <h2>Register</h2>
+                <form>
+                    <label for="register-email">Email:</label>
+                    <input type="email" id="register-email" required>
+                    <label for="register-password">Password:</label>
+                    <input type="password" id="register-password" required>
+                    <button type="submit">Register</button>
+                </form>
+                <p>Already have an account? <a href="#" onclick="toggleForms()">Login</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Buttons to Open Pop-up -->
+<button onclick="openPopup()">Login / Register</button>
+
+    
+
+    <section id="home">
+        <img src="restaurant.jpg" alt="Restaurant Interior">
+        <h2>Delicious Food, Great Atmosphere</h2>
+        <button onclick="window.location='#reservations'">Make a Reservation</button>
+    </section>
+
+    <!-- <section id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li>Appetizers
+                <ul>
+                    <li>Bruschetta - $8</li>
+                    <li>Stuffed Mushrooms - $10</li>
+                </ul>
+            </li>
+            <li>Main Courses
+                <ul>
+                    <li>Grilled Salmon - $20</li>
+                    <li>Vegetarian Pasta - $15</li>
+                </ul>
+            </li>
+            <li>Desserts
+                <ul>
+                    <li>Cheesecake - $7</li>
+                    <li>Chocolate Mousse - $6</li>
+                </ul>
+            </li>
+        </ul>
+    </section> -->
+
+    <section id="cards">
+        <div class="card">
+            <img src="../img/5.-Cameroon-Beef-Jollof-Rice.webp" alt="Description of Image 1">
+            <h3>plate of the day</h3>
+            <p>This is a description for the first card. It gives an overview of the content related to this image.</p>
+        </div>
+        <div class="card">
+            <img src="../img/download (3).jpeg" alt="Description of Image 2">
+            <h3>in need for catering</h3>
+            <p>This is a description for the second card. It provides details about the content connected to this image.</p>
+        </div>
+    </section>
+    
+
+    <!-- <section id="about">
+        <h2>About Us</h2>
+        <p>Our restaurant has been serving delicious meals since 2020. We pride ourselves on quality ingredients and a welcoming atmosphere.</p>
+    </section>
+
+    <section id="reservations">
+        <h2>Reservations</h2>
+        <p>Call us at (123) 456-7890 or email us at reservations@example.com.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Address: 123 Foodie Lane, Flavor Town, USA</p>
+        <p>Hours: Mon-Sun 11am - 10pm</p>
+    </section> -->
+
+    <footer>
+        <p>&copy; 2024 My Restaurant | Follow us on social media!</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
